@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <base target="_blank"> <!-- open all links on a new tab -->
+
+        <title>Points</title>
+
+        <link href="clickme_assets/clickme.css" rel="stylesheet">
+<link href="clickme_assets/d3_tip.css" rel="stylesheet">
+<link href="clickme_assets/chart.css" rel="stylesheet">
+<script src="clickme_assets/d3.v3.4.3.js"></script>
+<script src="clickme_assets/d3_aux.js"></script>
+<script src="clickme_assets/d3_tip.js"></script>
+
+        <style>
+            text{
+                font-family: Rockwell, Helvetica, Arial, sans;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="g-search">
+                <input type="text" placeholder="Search…">
+                <button style="display:none;" class="g-search-clear">X</button>
+        </div>
+        <script type="text/javascript">
+            plot = new_plot({
+                data: [{"x":1,"y":0.351938154324821,"radius":5,"point_name":"1"},
+{"x":2,"y":0.405668244412748,"radius":5,"point_name":"2"},
+{"x":3,"y":0.588325656159398,"radius":5,"point_name":"3"},
+{"x":4,"y":-0.443329374930845,"radius":5,"point_name":"4"},
+{"x":5,"y":-0.662527444369533,"radius":5,"point_name":"5"},
+{"x":6,"y":0.12643647339469,"radius":5,"point_name":"6"},
+{"x":7,"y":-1.46325840554499,"radius":5,"point_name":"7"},
+{"x":8,"y":0.305304990624173,"radius":5,"point_name":"8"},
+{"x":9,"y":0.00616815120026624,"radius":5,"point_name":"9"},
+{"x":10,"y":0.755790563285192,"radius":5,"point_name":"10"},
+{"x":11,"y":-0.514015964511119,"radius":5,"point_name":"11"},
+{"x":12,"y":-2.1405132024605,"radius":5,"point_name":"12"},
+{"x":13,"y":-0.00180509822575075,"radius":5,"point_name":"13"},
+{"x":14,"y":-1.59871310016458,"radius":5,"point_name":"14"},
+{"x":15,"y":0.636074819653547,"radius":5,"point_name":"15"},
+{"x":16,"y":0.33084111944603,"radius":5,"point_name":"16"},
+{"x":17,"y":0.548504881448617,"radius":5,"point_name":"17"},
+{"x":18,"y":-1.30928889651913,"radius":5,"point_name":"18"},
+{"x":19,"y":1.05796788364333,"radius":5,"point_name":"19"},
+{"x":20,"y":0.334664226436805,"radius":5,"point_name":"20"},
+{"x":21,"y":-0.217263117675558,"radius":5,"point_name":"21"},
+{"x":22,"y":-0.326015452575331,"radius":5,"point_name":"22"},
+{"x":23,"y":-0.682780937466903,"radius":5,"point_name":"23"},
+{"x":24,"y":-0.207427560084064,"radius":5,"point_name":"24"},
+{"x":25,"y":1.41303660986465,"radius":5,"point_name":"25"},
+{"x":26,"y":-1.90047422943276,"radius":5,"point_name":"26"},
+{"x":27,"y":1.01514447702548,"radius":5,"point_name":"27"},
+{"x":28,"y":0.0476537842631287,"radius":5,"point_name":"28"},
+{"x":29,"y":1.30545742573226,"radius":5,"point_name":"29"},
+{"x":30,"y":-0.0351325837116793,"radius":5,"point_name":"30"},
+{"x":31,"y":1.10444838858564,"radius":5,"point_name":"31"},
+{"x":32,"y":0.27957672537147,"radius":5,"point_name":"32"},
+{"x":33,"y":1.00806142955244,"radius":5,"point_name":"33"},
+{"x":34,"y":0.618541334164638,"radius":5,"point_name":"34"},
+{"x":35,"y":0.766301664590545,"radius":5,"point_name":"35"},
+{"x":36,"y":-0.734161041731157,"radius":5,"point_name":"36"},
+{"x":37,"y":-0.144863241274059,"radius":5,"point_name":"37"},
+{"x":38,"y":0.455083668397371,"radius":5,"point_name":"38"},
+{"x":39,"y":1.13506656019006,"radius":5,"point_name":"39"},
+{"x":40,"y":-0.852059155690487,"radius":5,"point_name":"40"},
+{"x":41,"y":-0.606252413593293,"radius":5,"point_name":"41"},
+{"x":42,"y":0.651390780092209,"radius":5,"point_name":"42"},
+{"x":43,"y":0.0181415437313347,"radius":5,"point_name":"43"},
+{"x":44,"y":-0.921336458144098,"radius":5,"point_name":"44"},
+{"x":45,"y":1.47968604804336,"radius":5,"point_name":"45"},
+{"x":46,"y":0.489137222072135,"radius":5,"point_name":"46"},
+{"x":47,"y":2.19327568036492,"radius":5,"point_name":"47"},
+{"x":48,"y":0.298515294765926,"radius":5,"point_name":"48"},
+{"x":49,"y":0.547437507819781,"radius":5,"point_name":"49"},
+{"x":50,"y":-0.359630444645689,"radius":5,"point_name":"50"}],
+                data_ranges: {"x":[1,50],"y":[-2.1405132024605,2.19327568036492]},
+                categorical_domains: {"x":null,"y":null},
+                width: 500,
+                height: 500,
+                padding: {"top":150,"right":400,"bottom":70,"left":100},
+                labels: {
+                    title: "Points",
+                    subtitle: "",
+                    x_title: "",
+                    y_title: "",
+                    color_title: "Group"
+                },
+                rotate: {
+                    x_title: null,
+                    y_title: true,
+                    x_labels: null,
+                    y_labels: null,
+                },
+                scale_limits: {
+                    x: null,
+                    y: null
+                },
+                jitter: {
+                    x: 0,
+                    y: 0
+                },
+                x_format: null,
+                y_format: null,
+                ordinal_scale_padding: 1,
+                linear_scale_padding: 40
+            });
+
+            distance_between_show_names_and_color_groups = 80;
+            static_radius = 5;
+
+            opacity = 1;
+            stroke_width = 0;
+            show_sidebar = true;
+
+            color_scale = d3.scale.ordinal()
+                                        .range(["#000"]);;
+            color_legend_counts = [];
+            tooltip_content = function(d) {
+return "<table><tr><td colspan='2' class='tooltip-title'>" + d.point_name + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>x</td><td class='tooltip-metric-value'>" + d['x'] + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>y</td><td class='tooltip-metric-value'>" + d3.format('.2f')(d['y']) + "</td></tr></table>"
+};;
+        </script>
+
+        <script src="clickme_assets/Points/plot.js"></script>
+    </body>
+</html>
